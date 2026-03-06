@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faizi &amp; Anam | Wedding Invitation</title>
+  <meta name="description" content="Luxury digital wedding invitation for Faizi and Anam.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+    Night Luxe
+  </button>
+
+  <main class="page">
+    <section class="invitation-scene" id="invitationScene" aria-label="Wedding invitation envelope">
+      <div class="gold-particles" id="goldParticles" aria-hidden="true"></div>
+      <p class="scene-title">You're Invited</p>
+
+      <button class="envelope" id="envelopeBtn" aria-expanded="false" aria-controls="invitationCard">
+        <span class="envelope-shadow" aria-hidden="true"></span>
+        <span class="envelope-pocket" aria-hidden="true"></span>
+        <span class="envelope-flap" aria-hidden="true"></span>
+        <span class="envelope-seal" aria-hidden="true"></span>
+        <span class="sr-only">Tap to open the invitation</span>
+      </button>
+
+      <p class="tap-hint" id="tapHint">Tap the envelope to open</p>
+
+      <article class="invitation-card" id="invitationCard" aria-live="polite">
+        <div class="card-ornament card-ornament-top" aria-hidden="true"></div>
+
+        <div class="card-content">
+          <p class="line-script">together</p>
+          <p class="line-intro">with their families</p>
+          <p class="line-intro">joyfully invite you to celebrate the wedding of</p>
+
+          <h1 class="names">
+            <span>Faizi</span>
+            <span class="ampersand">&amp;</span>
+            <span>Anam</span>
+          </h1>
+
+          <div class="details">
+            <p class="detail-item"><span>Date</span>April 10th, 2026</p>
+            <p class="detail-item"><span>Time</span>8:00 PM onwards</p>
+            <p class="detail-item"><span>Venue</span>Jalsa Lawn<br>Jajmau, Kanpur</p>
+          </div>
+
+          <a
+            class="btn-location"
+            id="locationBtn"
+            href="https://www.google.com/maps/search/?api=1&query=Jalsa+Lawn+Jajmau+Kanpur"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Location
+          </a>
+        </div>
+
+        <div class="card-ornament card-ornament-bottom" aria-hidden="true"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
